@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('mutual-header') %>
+        <title> Profile </title>
+        <link rel='stylesheet' type='text/css' href='/css/detail.css'>
+        <script src='/js/detail.js' type='text/javascript'></script>
+    </head>
+    <body>
+        <%- include('mutual-body') %>
+        <div id='container'>
+            <nav>
+                <a id='profile-back' href='/'><i class="fas fa-caret-left"></i>
+                Back</a>
+                <img id='profile-img' class='profile-child'
+                src='<%= politician.imgsrc %>' >
+                <h4 id='profile-name' class='profile-child' data-profile_info='<%= politician.name %>'>
+                    姓名: <%= politician.name %>
+                </h4>
+                <h4 id='profile-area' class='profile-child'>
+                    區域: <%= politician.area %>
+                </h4>
+                <h4 id='profile-title' class='profile-child'>
+                    職稱: <%= politician.title %>
+                </h4>
+                <h4 id='profile-party' class='profile-child'>
+                    政黨: <%= politician.party %>
+                </h4>
+            </nav>
+            <section id='content'>
+                <nav id='content-nav'>
+                    <button data-content_type='news'>新聞</button>
+                    <button data-content_type='ptt'>PTT</button>
+                    <button data-content_type='yt'>Youtube</button>
+                </nav>
+                <article id='content-headlines'>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>

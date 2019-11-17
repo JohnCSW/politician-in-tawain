@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+body, html , h1, h2, h4{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2.2em;
+}
+h4{
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+#search{
+    margin-top: 7vh;
+    height: 93vh;
+    width: 100vw;
+    background-color: lightblue;
+    display: grid;
+    grid-template-rows: repeat(1fr, 6);
+    justify-items: center;
+    grid-row-gap: 10px;
+}
+.search-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    color: darkblue;
+}
+#search-heading{
+    background: lightblue;
+}
+.search-child > input, .search-child > select{
+    width: 40%;
+    height: 20px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    display: flex;
+}
+.search-child > select {
+    font-size: 0.7em;
+}
+.search-child > label {
+    font-size: 0.8em;
+}
+#search-send > button{
+    border: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 25px;
+    font-size: 0.7em;
+    color: white;
+    background-color: darkblue;
+}
+#search-send{
+    margin-bottom: 10px;
+}
+#result {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 5px;
+    padding: 0px 10px 0px 10px;
+}
+#result > h2{
+    grid-area: 1/1/2/5;
+    justify-self: center;
+    align-self: center;
+    color: darkblue;
+}
+.result-preview{
+    height: 200px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    justify-items: center; 
+    color: darkblue;
+    text-decoration: none;
+}
+.result-preview:hover{
+    text-decoration: none;
+}
+.result-preview > label{
+    display: block;
+    font-size: 0.7em;
+}
+.result-preview > img{
+    grid-area: 1/1/6/2;
+    height: 80%;
+    align-self: center;
+    border-radius: 2px;
+}
+#notfound_indicator{
+    grid-area: 1/1/2/5;
+    color: grey;
+    font-size: 1em;
+    align-self: center;
+    justify-self: center;
+}

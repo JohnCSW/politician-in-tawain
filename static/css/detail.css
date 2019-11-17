@@ -1,0 +1,115 @@
+body, h2, h4, img{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    margin-top: 7vh;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+#container > nav{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    align-items: center;
+    justify-items: center;
+    border-right: 1px gray solid;
+}
+#profile-img{
+    grid-area: 2/1/5/2;
+    width: 60%;
+    border-radius: 5px;
+    border: 0.5px gray solid;
+}
+.profile-child{
+    width: 80%;
+    font-size: 0.8em;
+    font-weight: normal;
+    text-align: center;
+    color: darkcyan;
+}
+#profile-back{
+    color: darkcyan;
+    font-size: 1em;
+    width: 100%;
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: bold;
+}
+#content{
+    height: 100vh;
+    width: 100%;
+    grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+#content > nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#content > nav > button{
+    width: 15%;
+    height: 40%;
+    min-width: 75px;
+    min-height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+    outline: none;
+}
+#content > article{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    overflow: scroll;
+    width: 100%;
+    justify-items: center;
+}
+.headlines{
+    width: 70%;
+    height: 50px;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px 0px 5px;
+    
+}
+.headlines:first-of-type{
+    margin-top: 10px;
+}
+.headlines > a{
+    width: 85%;
+    height: 100%;
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.headlines > a:hover{
+    text-decoration: none;
+    color: darkblue;
+    border-color: darkblue;
+}
+.headlines-fav{
+    width: 10%;
+    font-size: 0.7em;
+    border: none;
+    color: rgba(255, 0, 0, 0.8);
+}
+#spinner, #notfound_indicator{
+    position: relative;
+    top: 30%;
+    color: grey;
+    font-size: 1em;
+}

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <%- include('mutual-header')%>
+        <meta charset='utf-8'>
+        <title>
+            Personal Info
+        </title>
+        <link rel='stylesheet' type='text/css' href='/css/profile.css'>
+        <script src='/js/profile.js' type='text/javascript'></script>
+    </head>
+    <body>
+        <%- include('mutual-body')%>
+        <article id='profile-info'>
+            <section id='profile-info-des'>
+                <h3>
+                    帳號: <%= user.account %>
+                </h3>
+               <h3>
+                    姓名: <%= user.name %>
+               </h3>
+               <h3>
+                    Email: <%= user.email %>
+                </h3>
+            </section>
+            <section id='profile-info-img'>
+                <i class="fas fa-user-circle"></i>
+            </section>
+        </article>
+        <article id='profile-bookmarks'>
+            <nav id='profile-bookmarks-type'>
+                <button data-type='ptt'>PTT</button>
+                <button data-type='news'>新聞</button>
+                <button data-type='yt'>Youtube</button>
+            </nav>
+            <section id='profile-bookmarks-list'>
+                
+            </section>
+        </article>
+        <button id='profile-backBtn'><i class="fas fa-caret-left"></i>
+        Back</button>
+    </body>
+</html>

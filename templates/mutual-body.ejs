@@ -1,0 +1,34 @@
+<nav id='navbar'>
+    <a id='navbar-profile' href='/profile/me'><i class="far fa-user"></i></a>
+    <section id='navbar-auth'>
+        <% if (isLoggedIn) { %>
+            <button data-auth_type='logout'>登出</button>
+        <%} else { %>
+            <h2>想收藏自己的文章?</h2>
+            <button data-auth_type='user_auth'>登入/註冊</button>
+        <% } %>
+    </section>
+</nav>
+<div id='auth-bg'>
+<article id='auth'>
+        <section id='auth-close'>
+            <button><i class="fas fa-times"></i></button>
+        </section>
+        <nav>
+            <button id='auth-login' data-auth_type='login'>登入</button>
+            <button id='auth-signup' data-auth_type='signup'>註冊</button>
+        </nav>
+        <label id='auth-error_msg'></label>
+        <section id='auth-data-field'>
+            <label>
+                帳號:<input id='auth-data-acc'type='email' required>
+            </label>
+            <label>
+                密碼:<input id='auth-data-pass'type='password' required>
+            </label>
+        </section>
+        <section id='auth-send'>
+            <button>送出</button>
+        </section>
+    </article>
+</div>

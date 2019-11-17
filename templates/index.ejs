@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('mutual-header') %>
+        <title>PIT</title>
+        <script src='js/index.js'></script>
+        <link rel='stylesheet' type='text/css' href='css/index.css'>
+    </head>
+    <body>
+        <%- include('mutual-body') %>
+        <article id='search'>
+            <section id='search-heading' class='search-child'>
+                <h1>PIT</h1>
+                <h4>politicians in taiwan</h4>
+            </section>
+            <section id='search-area' class='search-child'>
+                <label>區域</label>
+                <select>
+                    <option value="">不選擇</option>
+                    <% area_list.forEach(function(area) {%>
+                    <option value='<%= area%>'>
+                        <%= area %>
+                    </option>
+                    <%});%>
+                </select>
+            </section>
+            <section id='search-title' class='search-child'>
+                <label>職稱</label>
+                <select>
+                    <option value="">不選擇</option>
+                    <% title_list.forEach(function(title) {%>
+                        <option value='<%= title%>'>
+                            <%= title %>
+                        </option>
+                    <%});%>
+                </select>
+            </section>
+            <section id='search-party' class='search-child'>
+                    <label>政黨</label>
+                    <select>
+                            <option value="">不選擇</option>
+                        <% party_list.forEach(function(party) {%>
+                            <option value='<%= party%>'>
+                                <%= party %>
+                            </option>
+                        <%});%>
+                    </select>
+            </section>
+            <section id='search-name' class='search-child'>
+                    <label>姓名</label>
+                   <input type='text' placeholder="可留白">
+            </section>
+            <section id='search-send' class='search-child'>
+                <button>查詢</button>
+            </section>
+        </article>
+        <article id='result'>
+        </article>
+    </body>
+</html>

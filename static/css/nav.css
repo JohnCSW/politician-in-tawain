@@ -1,0 +1,42 @@
+#navbar{
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: darkcyan;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar-auth {
+    display: flex;
+}
+#navbar-auth > button{
+    background-color: transparent;
+    border: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: whitesmoke;
+}
+#navbar-profile{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+#navbar > button:hover{
+    cursor: pointer;
+}
+#navbar h2{
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    color: darkgrey;
+}
+#navbar-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

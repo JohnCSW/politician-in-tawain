@@ -1,0 +1,84 @@
+#auth-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#auth{
+    width: 35%;
+    height: 70vh;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr 4fr 1fr;
+    background-color: white;
+}
+#auth-close {
+    display: flex;
+    justify-content: flex-end;
+}
+#auth-close > button{
+    border: none;
+    margin-right: 5px;
+}
+#auth > nav{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#auth > nav > button{
+    border: none;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#auth-login{
+    color: darkcyan;
+}
+#auth-signup{
+    color: grey;
+}
+#auth-data-field > label{
+    display: inline-block;
+    font-size: 0.7em;
+}
+#auth-data-field > label > input{
+    margin-left: 10px;
+    height: 20px;
+}
+#auth-data-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#auth-send{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#auth-send > button{
+    width: 70%;
+    height: 70%;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    
+}
+#auth-error_msg{
+    color: red;
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+}
