@@ -32,6 +32,8 @@ and posts from the forum about your interested politicians.
 5. `node app.js` on <http://localhost:5000>
 ## Features:
 * Search politicians you're interested in.
+<img src='./readme-src/PIT_Search.gif'>
+
 * Provide you the profile and the **links** of video clips, news and posts from forum(PTT) about your interested politicain.
 * Log In/Sign Up for keeping your favorite articles, video clips and posts
 ## Note:
