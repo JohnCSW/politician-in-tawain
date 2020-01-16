@@ -3,6 +3,14 @@
 PIT(stands for Politicians In Taiwan) is a webiste that provides the news, video clips, 
 and posts from the forum about your interested politicians.
 ## Tech Stacks:
+### Back-end:
+* NodeJS
+* Express
+* MongoDB
+### Font-end:
+* Simeple Html, CSS, Javascript
+* Simeple Bootstrap
+### Some NodeJS modules:
 ```
 ├── @hapi/joi@15.0.3
 ├── bcrypt@3.0.6
