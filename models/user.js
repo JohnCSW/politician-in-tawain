@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const Joi = require('@hapi/joi');
 const jwt = require('jsonwebtoken');
-mongoose.connect('mongodb://localhost/news', {useNewUrlParser: true,  useCreateIndex: true,})
-.then(() => {console.log('Connecting to the db(User)...')})
-.catch(err => {console.error('Someting failed')});
+mongoose.connect('mongodb://localhost/news', { useNewUrlParser: true,  useCreateIndex: true,})
+.then(() => { console.log('Connecting to the db(User)...')} )
+.catch(err => { console.error('Someting failed')} );
 
 const articlesSchema = mongoose.Schema({
     title: String,

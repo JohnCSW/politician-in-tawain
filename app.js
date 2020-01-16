@@ -16,7 +16,7 @@ app.use(require('cookie-parser')());
 app.use(express.json());
 //-convert form-data(multipart)
 app.use(require('multer')().none());
-app.use(session({secret: 'secret'}));
+app.use(session({secret: 'secret', resave: false, saveUninitialized: true}));
 //Routes:
 app.use('/api/politicians', api_politicians);
 app.use('/api/articles/', articles);

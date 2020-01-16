@@ -44,6 +44,7 @@ function loadInfo(name, type, displayInfo){
                 document.querySelector('#content-headlines').innerHTML = indicateNotFound();
             }else{
                 displayInfo(data.headlines);
+                console.log(data);
             }
         }else{
             document.querySelector('#content-headlines').innerHTML = indicateNotFound();

@@ -19,7 +19,7 @@ const ytOptions = {
     }
 }
 function getRecentNews(name){
-    return new Promise(async (resolve, reject ) => {
+    return new Promise(async (resolve, reject) => {
         try{
             const browser = await puppeteer.launch();
             const page = await browser.newPage();
