@@ -8,8 +8,8 @@ and posts from the forum about your interested politicians.
 * Express
 * MongoDB
 ### Font-end:
-* Simeple Html, CSS, Javascript
-* Simeple Bootstrap
+* Simple Html, CSS, Javascript
+* Simple Bootstrap
 ### Some NodeJS modules:
 ```
 ├── @hapi/joi@15.0.3
